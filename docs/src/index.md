@@ -1,8 +1,11 @@
+# packageTrial
+
 ```@meta
 CurrentModule = packageTrial
+DocTestSetup = quote
+    using packageTrial
+end
 ```
-
-# packageTrial
 
 ```@index
 ```
