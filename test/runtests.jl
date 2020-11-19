@@ -1,6 +1,3 @@
-using packageTrial
-using Test
+using SafeTestsets
 
-@testset "packageTrial.jl" begin
-    # Write your tests here.
-end
+@safetestset "my f Tests" begin include("my_f_test.jl") end
