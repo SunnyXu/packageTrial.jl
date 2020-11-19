@@ -1,0 +1,27 @@
+site_name:        packageTrial.jl
+repo_url:         https://github.com/SunnyXu/packageTrial.jl
+site_description: Description...
+site_author:      Jin Xu
+
+theme: readthedocs
+
+extra_css:
+  - assets/Documenter.css
+
+extra_javascript:
+  - https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+  - assets/mathjaxhelper.js
+
+markdown_extensions:
+  - extra
+  - tables
+  - fenced_code
+
+docs_dir: 'build'
+
+pages:
+  - Home: index.md
+  - Tutorial:
+    - Title 1:tutorials/page1.md
+    - Title 2:tutorials/page2.md
+    - Title 3:tutorials/page3.md
