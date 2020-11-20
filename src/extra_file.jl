@@ -14,7 +14,7 @@ end
 Returns double the number 'x' plus double the number 'y'.
 
 """
-function my_f(x, y)
+function my_f_add(x, y)
     return 2x + 2y
 end
 
