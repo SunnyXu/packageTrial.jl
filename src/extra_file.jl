@@ -30,7 +30,7 @@ Dummy function, not exported
 
 # Examples
 ```jldoctest
-julia> my_module.add_not_exported(1, 2)
+julia> packageTrial.add_not_exported(1, 2)
 3
 ```
 """
