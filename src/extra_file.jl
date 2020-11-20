@@ -34,17 +34,17 @@ function add_exported(x::Number, y::Number)
     return x + y
 end
 
-"""
-    add_not_exported(x, y)
+#"""
+#    add_not_exported(x, y)
 
-Dummy function, not exported
+#Dummy function, not exported
 
-# Examples
-```jldoctest
-julia> packageTrial.add_not_exported(1, 2)
-3
-```
-"""
-function add_not_exported(x::Number, y::Number)
-    return x + y
-end
+## Examples
+#```jldoctest
+#julia> packageTrial.add_not_exported(1, 2)
+#3
+#```
+#"""
+#function add_not_exported(x::Number, y::Number)
+#    return x + y
+#end
