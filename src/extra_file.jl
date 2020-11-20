@@ -48,16 +48,3 @@ julia> packageTrial.add_not_exported(1, 2)
 function add_not_exported(x::Number, y::Number)
     return x + y
 end
-
-
-"""
-    createRRInstance()
-Initialize  and return a new roadRunner instances.
-"""
-function createRRInstance()
-  val = ccall(dlsym(rrlib, :createRRInstance), cdecl, Ptr{Nothing}, ())
-  if val == C_NULL
-    error("Failed to start up roadRunner")
-  end
-  return val
-end
