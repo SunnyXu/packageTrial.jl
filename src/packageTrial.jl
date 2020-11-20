@@ -18,6 +18,7 @@ include("rrc_types.jl")
 # export functions you want to call without qualifications
 export add_exported
 export my_f
+export createRRInstance
 
 #using DataFrames # or any other module
 
@@ -55,17 +56,7 @@ function loada(antString::String)
   return rr
 end
 
-"""
-    createRRInstance()
-Initialize  and return a new roadRunner instances.
-"""
-function createRRInstance()
-  val = ccall(dlsym(rrlib, :createRRInstance), cdecl, Ptr{Nothing}, ())
-  if val == C_NULL
-    error("Failed to start up roadRunner")
-  end
-  return val
-end
+
 
 
 
